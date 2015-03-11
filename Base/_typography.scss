@@ -11,8 +11,8 @@
 // VARIABLES
 //--------------------------------------------------------------
   $font-family                  : "'Helvetica', 'Arial', sans-serif" !default;
-  $font-size                    : 10px;
-  $error-color                  : "red";
+  $font-size                    : 10px !default;
+  $error-color                  : "red" !default;
 
 //--------------------------------------------------------------
 // DEFAULTS
