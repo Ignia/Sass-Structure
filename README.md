@@ -1,6 +1,15 @@
 # Ignia SASS Structure
 Ignia's internal file and directory structure for CSS pre-compiled using SASS.
 
+## Contents
+- [Variables](#variables)
+- [Directories](#directories)
+- [General Conventions](#general-conventions)
+  - [Import Strategy](#import-strategy)
+  - [Emergent Trends](#emergent-trends)
+  - [Ambiguous Identifiers](#ambiguous-identifiers)
+- [Acknowledgements](#acknowledgements)
+
 ## Variables
 Ignia places the `_variables.scss` file in the root as, ideally, that is the first stop for maintaining the site styles after the site has been built. For more invasive updates or refreshes, developers will certainly need to modify other directories, but any variables we expect to be modified should be in this file. Some developers place the `_variables.scss` in `/Base` or `/Helpers`; Ignia, however, maintains that this file should be immediately obvious and accessible when opening the `/Styles` directory.
 
@@ -38,7 +47,7 @@ In developing our SASS structure we aimed to identify emerging trends in how oth
 ### Ambiguous Identifiers
 Despite the above, there were a number of popular identifiers that Ignia chose not to use. These include, for instance, `/Modules`, `/Partials`, and `/Utilities`. While Ignia has our own consistent definition for each of these terms, we found that their definitions vary considerably across SASS implementations. For instance, `/Utilities` sometimes refer to CSS utility classes (e.g., `.clearfix`), other times it refers to SASS utilities, such as functions, mixins, placeholders, etc. `/Modules` was similarly confusing, as sometimes modules represent sub-components, other times the exact opposite. To avoid ambiguity when working with other developers, we consciously excluded these terms for folder names (although a `_utilities.scss` does appear under `/Base` for CSS utilities).
 
-### Acknowledgements
+## Acknowledgements
 In developing our SASS directory structure, Ignia relied heavily on best practices established by the broader web development community. In particular, each of the following articles played an influence in some of the conventions we have adopted.
 - [Clean Out Your SASS Junk-Drawer](http://gist.io/4436524) by [Dale Sande](https://github.com/anotheruiguy)
 - [Architecture for a SASS Project](http://www.sitepoint.com/architecture-sass-project/) by [Hugo Giraudel](https://github.com/HugoGiraudel)
