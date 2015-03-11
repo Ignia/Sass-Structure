@@ -2,22 +2,23 @@
 Ignia's internal file and directory structure for CSS pre-compiled using SASS.
 
 ## Directories
-- [ ] [Base](./Base/)
-- [ ] [Components](./Components/)
+- [x] [Base](./Base/)
+- [x] [Components](./Components/)
   - [ ] [ComponentA](./Components/ComponentA/)
 - [ ] [Global](./Global/)
   - [ ] [Defaults](./Global/Defaults/)
   - [ ] [Admin](./Global/Admin/)
   - [ ] [Helpers](./Global/Helpers/)
-- [ ] [Helpers](./Helpers/)
-- [ ] [Layout](./Layout/)
-- [ ] [Overrides](./Overrides/)
+- [x] [Helpers](./Helpers/)
+- [x] [Layout](./Layout/)
+- [x] [Overrides](./Overrides/)
 - [ ] [Themes](./Themes/)
   - [ ] [Brand](./Themes/Brand/)
   - [ ] [Theme](./Themes/Theme/)
-- [ ] [Vendor](./Vendor/)
-- [ ] [Views](./Views/)
+- [x] [Vendor](./Vendor/)
+- [x] [Views](./Views/)
 
+> *Note:* Checked items are considered default directories and should always be maintained, if only as placeholders; unchecked items are either optional or only provided as sample content.
 
 ## Variables
 Ignia put the `_variables.scss` file in the root as, ideally, that is the first stop for maintaining the site styles after the site has been built. For more invasive updates or refreshes, developers will certainly need to dive into other directories, but any variables we expect to be modified will be in this file. Others sometimes place this file in `/Base` or `/Helpers`; we feel it is important that this file be immediately obvious. Variables defined in other files should always use the `! default` flag so they can be overwritten by `_variables.scss`.
