@@ -1,0 +1,19 @@
+//==============================================================
+// GLOBAL
+//--------------------------------------------------------------
+// Global elements are shared between multiple projects and
+// typically managed beyond the scope of this file. They may
+// include default styles and templates used by a company, or
+// shared helpers (such as functions, mixins).
+//--------------------------------------------------------------
+// NOTE: Since global styles are intended to be centralized,
+// they should each be included in their own repository and
+// imported into this project as needed. Global styles will be
+// found in /Global/Name/ (e.g., /Global/Admin/).
+//==============================================================
+
+//--------------------------------------------------------------
+// IMPORTS
+//--------------------------------------------------------------
+  @import "Global/Defaults";
+  @import "Global/Admin";

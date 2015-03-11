@@ -1,0 +1,28 @@
+//==============================================================
+// STYLE
+//--------------------------------------------------------------
+// Primary entry point for application. Imports all other
+// manifest files, including variables.
+//==============================================================
+
+//--------------------------------------------------------------
+// IMPORT VARIABLES
+//--------------------------------------------------------------
+// NOTE: When possible, all changes should be made to variables.
+// Only when that is not practical should changes be made
+// elsewhere.
+//--------------------------------------------------------------
+  @import "Variables";
+
+//--------------------------------------------------------------
+// IMPORT OTHER MANIFESTS
+//--------------------------------------------------------------
+  @import "Base/Base";
+  @import "Components/Components";
+  @import "Global/Global";
+  @import "Helpers/Helpers";
+  @import "Layout/Layout";
+  @import "Overrides/Overrides";
+  @import "Vendor/Vendor";
+  @import "Views/Views";
+
