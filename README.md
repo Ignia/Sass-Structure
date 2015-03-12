@@ -1,5 +1,5 @@
 # Ignia Sass Structure
-Ignia's internal file and directory structure for CSS pre-compiled using Sass.
+The projects Ignia works on come in a variety of sizes. For that reason, it is important that our Sass directory structure be comprehensive enough to accomodate large projects, without adding unnecessary complexity and overhead to small projects. To this end, we have aimed to establish a baseline structure that requires *relatively* few files, as well as a roadmap for how to extend that structure as projects (inevitably) grow.
 
 ## Contents
 - [Variables](#variables)
@@ -34,12 +34,12 @@ Ignia places the `_variables.scss` file in the root as, ideally, that is the fir
 
 > *Note:* Checked items are considered default directories and should always be maintained, if only as placeholders; unchecked items are either optional or only provided as sample content.
 
-## General Conventions
-
-### Import Strategy
-The projects Ignia works on come in a variety of sizes. For that reason, it is important that our Sass directory structure be comprehensive enough to accomodate large projects, without adding unnecessary complexity and overhead to small projects. To this end, we have aimed to establish a baseline structure that requires relatively few files, as well as a roadmap for how to extend that structure for (very) large projects. As a result, some concepts that are typically kept distinct in large projects (such as variables, manifests, and styles) may be conflated in smaller projects. For example, every directory (including the root) has a file in it with the same name as the ; e.g., the `/Base` directory contains a file named `_base.scss`. For a small site, this file may contain all base styles; for a larger site, however, it will likely be used exclusively as a manifest file by importing other files in the `/Base` directory. Regardless of this, authors have the assurance that all dependencies can be imported into the `/Style.scss` file by importing the `/Directory/_directory.scss` file.
+## Import Strategy
+To support a variety of project sizes, some concepts that are typically kept distinct in large projects (such as variables, manifests, and styles) may be consolidated in smaller projects. For example, every directory (including the root) has a file in it with the same name as the parent directory; e.g., the `/Base` directory contains a file named `_base.scss`. For a small site, this file may contain all base styles; for a larger site, however, it will be used *exclusively* as a manifest (responsible for importing all other files in the `/Base` directory). Regardless of a site's state of growth, however, authors have the assurance that all dependencies can be imported into the `/Style.scss` file by simply importing the `/Directory/_directory.scss` file.
 
 > *Note:* The `/Themes` and `/Views` folders may not have manifest files (e.g., `/Themes/_theme.scss`) as it is recommended that these styles be compiled independent from the centralized CSS file. For more information, see the [Themes Directory documentation](./Themes/).
+
+## Motivation
 
 ### Emergent Trends
 In developing our Sass structure we aimed to identify emerging trends in how other developers are structuring their Sass projects, instead of relying exclusively on our own internal conventions. This is important since Ignia works with many contractors, partners, and client developers. To this end, we leveraged commonly used naming conventions such as `/Base`, `/Components`, `/Helpers`, `/Layouts`, `/Vendor`, and `/Views`.
@@ -47,7 +47,7 @@ In developing our Sass structure we aimed to identify emerging trends in how oth
 ### Ambiguous Identifiers
 Despite the above, there are a number of popular identifiers that Ignia chose not to use. These include, for instance, `/Modules`, `/Partials`, and `/Utilities`. While Ignia has our own consistent definition for each of these terms, we found that their definitions vary considerably across Sass implementations. For instance, `/Utilities` sometimes refer to CSS utility classes (e.g., `.clearfix`), other times it refers to Sass utilities (e.g., functions, mixins, and placeholders).
 
-## Acknowledgements
+### Acknowledgements
 In developing our Sass directory structure, Ignia relied heavily on best practices established by the broader web development community. In particular, each of the following articles played an influence in some of the conventions we have adopted.
 - [Clean Out Your Sass Junk-Drawer](http://gist.io/4436524) by [Dale Sande](https://github.com/anotheruiguy)
 - [Architecture for a Sass Project](http://www.sitepoint.com/architecture-sass-project/) by [Hugo Giraudel](https://github.com/HugoGiraudel)
