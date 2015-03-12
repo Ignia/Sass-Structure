@@ -7,6 +7,6 @@ In some cases, a site may have multiple themes, which may be selectable by conte
 ## Files
 Typically, themes will involve multiple files, and thus each theme should live in its own subdirectory. E.g., a theme called "Admin" will live in a `/Themes/Admin/` folder, and expose a manifest at `/Themes/Admin/_admin.scss`.
 
-## Targeting
-It is important to note that there is no manifest file for `/Themes` (i.e., no `_themes.scss`). It is Ignia’s strong opinion that themes should be compiled independently of the main stylesheet and included dynamically (ideally by the server). As an alternative, some developers may wish to namespace their themes by placing a class name on, for instance, the body element. Ignia advises against this strategy as it bloats the CSS code (i.e., all themes must be included, even though only one is used at a time) and requires increased specificity of selectors (e.g., to overwrite a theme-specific style, the selector must also include the theme’s class name).
+## Compilation
+Themes should be compiled independently of the main stylesheet and included dynamically (ideally by the server). For this reason, there is not a manifest file for the `/Themes` folder (i.e., no `_themes.scss`). As an alternative, some developers may wish to namespace their themes by placing a class name on, for instance, the `body` element. Ignia advises against this strategy as it bloats the CSS code (i.e., all themes must be included, even though only one is used at a time) and requires increased specificity of selectors (e.g., to overwrite a theme-specific style, the selector must also include the theme’s class name).
 
