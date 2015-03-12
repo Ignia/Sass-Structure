@@ -1,6 +1,15 @@
 # Helpers Directory
 
-Helpers provide, exclusively, functional code that don’t output style declarations directly. For many sites, it may be enough to simply place these in the `/Helpers` folder. By default, these can be placed in the `_helpers.scss` file; for more complex structures, however, helpers should be broken down by type; this may include, for instance, placeholders (in `_placeholders.scss`), mix-ins (in `_mixins.scss`), and functions (in `_functions.scss`). For a *very* large site, it may be preferable to break up these files into even smaller components; in this case, it is recommended that partials be created in associated subfolders (e.g., `/Helpers/Mixins/`), and the associated manifest (e.g., `_mixins.scss`) moved into that subdirectory.
+Helpers provide, exclusively, functional code that don’t output style declarations directly. 
 
+# Files
+Helper files should be broken down by type, so their function is clear and they're easy to find. This includes:
+- Placeholders (in `_placeholders.scss`), 
+- Mixins (in `_mixins.scss`), and 
+- Functions (in `_functions.scss`). 
 
+# Scaling
+For a large site, it may be preferable to break up these files into  smaller components. In this case, it is recommended that partials be created in associated subfolders (e.g., `/Helpers/Mixins/`), with helpers distributed amongst individual partials (e.g., `_colors.scss`). In this case, the associated manifest (e.g., `_mixins.scss`) should be moved into that subdirectory.
+
+> *Note:* For Ignia, it is expected that many mixins and functions, at least, will be of value beyond any single project, and thus these are frequently centralized in the `/Global/Helpers/` directory. Given this, a single file is typically enough granularity for most projects.
 
