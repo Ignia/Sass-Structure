@@ -4,11 +4,12 @@ The projects Ignia works on come in a variety of sizes. For that reason, it is i
 ## Contents
 - [Variables](#variables)
 - [Directories](#directories)
-- [General Conventions](#general-conventions)
-  - [Import Strategy](#import-strategy)
+- [Import Strategy](#import-strategy)
+- [Styles Included](#styles-included)
+- [Motivation](#motivation)
   - [Emergent Trends](#emergent-trends)
-  - [Ambiguous Identifiers](#ambiguous-identifiers)
-- [Acknowledgements](#acknowledgements)
+    - [Ambiguous Identifiers](#ambiguous-identifiers)
+  - [Acknowledgements](#acknowledgements)
 
 ## Variables
 Ignia places the `_variables.scss` file in the root as, ideally, that is the first stop for maintaining the site styles after the site has been built. For more invasive updates or refreshes, developers will certainly need to modify other directories, but any variables we expect to be modified should be in this file. Some developers place the `_variables.scss` in `/Base` or `/Helpers`; Ignia, however, maintains that this file should be immediately obvious and accessible when opening the `/Styles` directory.
@@ -38,6 +39,9 @@ Ignia places the `_variables.scss` file in the root as, ideally, that is the fir
 To support a variety of project sizes, some concepts that are typically kept distinct in large projects (such as variables, manifests, and styles) may be consolidated in smaller projects. For example, every directory (including the root) has a file in it with the same name as the parent directory; e.g., the `/Base` directory contains a file named `_base.scss`. For a small site, this file may contain all base styles; for a larger site, however, it will be used *exclusively* as a manifest (responsible for importing all other files in the `/Base` directory). Regardless of a site's state of growth, however, authors have the assurance that all dependencies can be imported into the `/Style.scss` file by simply importing the `/Directory/_directory.scss` file.
 
 > *Note:* The `/Themes` and `/Views` folders may not have manifest files (e.g., `/Themes/_theme.scss`) as it is recommended that these styles be compiled independent from the centralized CSS file. For more information, see the [Themes Directory documentation](./Themes/).
+
+## Styles Included
+The goal of this project is to establish a baseline file and directory structure, not to provide a "UI framework". As such, the Sass files contain a minimal amount of markup. Nonetheless, we have provided a handful of styles in order to help demonstrate the approach and provide boilerplate reference. Where possible, we've only done this with styles that we expect most sites will want to override.
 
 ## Motivation
 
