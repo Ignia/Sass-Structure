@@ -58,4 +58,4 @@ In developing our Sass directory structure, Ignia relied heavily on best practic
 - [How to Structure a Sass Project](http://thesassway.com/beginner/how-to-structure-a-sass-project) by [John W. Long](http://wiseheartdesign.com/)
 - [Scalable and Modular Architecture for CSS](https://smacss.com/) by [Jonathan Snook](https://github.com/snookca)
 
-> <small>*Ignia is a registered trademark of Ignia, LLC.*</small>
+<small>*Ignia is a registered trademark of Ignia, LLC.*</small>
