@@ -2,7 +2,7 @@
 
 The `/Layout` directory represents all of the structural components of a website: dimensions, floats, padding, margins, positioning, and responsive design breakpoints. By separating these from style-related selectors, we allow the layout to be easily managed independent of the theme.
 
-> *Note:* The `/Layout` directory is the *only* location where ID-based selectors are expected to appear. These *may* may appropriate since layout sections (e.g., header, footer, navigation) are only expected to occur once on any given page. 
+> *Note:* The `/Layout` directory is the *only* location where ID-based selectors (e.g., `#identifier`) are expected to appear. These *may* may appropriate since layout sections (e.g., header, footer, navigation) are only expected to occur once on any given page. 
 
 ## Files
 In most sites, the `_layout.scss` file will be suitable. In complex sites, however, developers may prefer to break out particular sections of the layout, such as:
