@@ -42,7 +42,7 @@ The projects Ignia works on come in a variety of sizes. For that reason, it is i
 > *Note:* The `/Themes` and `/Views` folders may not have manifest files (e.g., `/Themes/_theme.scss`) as it is recommended that these styles be compiled independent from the centralized CSS file. For more information, see the [Themes Directory documentation](./Themes/).
 
 ### Emergent Trends
-In developing our Sass structure we aimed to identify emerging trends in how other developers are structuring their Sass projects, instead of relying exclusively on our own internal conventions. This is important since Ignia works with many contractors, partners, and client developers. To this end, we leveraged commonly used naming conventions such as `/Base`, `/Components`, `/Helpers`, `/Layouts`, `/Vendor`, and `/Views`,.
+In developing our Sass structure we aimed to identify emerging trends in how other developers are structuring their Sass projects, instead of relying exclusively on our own internal conventions. This is important since Ignia works with many contractors, partners, and client developers. To this end, we leveraged commonly used naming conventions such as `/Base`, `/Components`, `/Helpers`, `/Layouts`, `/Vendor`, and `/Views`.
 
 ### Ambiguous Identifiers
 Despite the above, there are a number of popular identifiers that Ignia chose not to use. These include, for instance, `/Modules`, `/Partials`, and `/Utilities`. While Ignia has our own consistent definition for each of these terms, we found that their definitions vary considerably across Sass implementations. For instance, `/Utilities` sometimes refer to CSS utility classes (e.g., `.clearfix`), other times it refers to Sass utilities (e.g., functions, mixins, and placeholders).
