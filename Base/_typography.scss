@@ -10,28 +10,77 @@
 //----------------------------------------------------------------------------------------------
 // VARIABLES
 //----------------------------------------------------------------------------------------------
-  $font-family                  : "'Helvetica', 'Arial', sans-serif" !default;
-  $font-size                    : 10px                          !default;
-  $error-color                  : "red"                         !default;
+
+//Font Families
+  $font-family-sans-serif       : "Helvetica Neue", Helvetica, Arial, sans-serif    !default;
+  $font-family-serif            : Georgia, "Times New Roman", Times, serif          !default;
+  $font-family-monospace        : Menlo, Monaco, Consolas, "Courier New", monospace !default;
+  $font-family-base             : $font-family-sans-serif               !default;
+
+//Font Sizes
+  $font-size-base               : 14px                                  !default;
+  $font-size-large              : ceil(($font-size-base * 1.25))        !default;       // ~18px
+  $font-size-small              : ceil(($font-size-base * 0.85))        !default;       // ~12px
+  $font-size-h1                 : floor(($font-size-base * 2.6))        !default;       // ~36px
+  $font-size-h2                 : floor(($font-size-base * 2.15))       !default;       // ~30px
+  $font-size-h3                 : ceil(($font-size-base * 1.7))         !default;       // ~24px
+  $font-size-h4                 : ceil(($font-size-base * 1.25))        !default;       // ~18px
+  $font-size-h5                 : $font-size-base                       !default;
+  $font-size-h6                 : $font-size-small                      !default;
+
+//Line Height
+  $line-height-base             : 1.428571429                           !default;       // 20/14
+  $line-height-calculated       : floor(($font-size-base * $line-height-base))      !default;
+
+//Weight
+  $font-weight-base             : 400;                                  !default;   // 'normal'
+  $font-weight-bold             : 700;                                  !default;   // 'bold'
+  $font-weight-semibold         : 600;                                  !default;
+  $font-weight-light            : 300;                                  !default;
+
+//Colors
+  $text-color                   : #666666                               !default;
+  $error-color                  : #FF0000                               !default;
+
+//Misc.
+  $font-smoothing               : antialiased                           !default;
+
 
 //----------------------------------------------------------------------------------------------
 // DEFAULTS
 //----------------------------------------------------------------------------------------------
   body {
-    font-family                 : $font-family;
-    font-size                   : $font-size;
+    font-family                 : $font-family-base;
+    font-size                   : $font-size-base;
+    font-weight                 : $font-weight-base;
+    color                       : $text-color;
   }
 
 //----------------------------------------------------------------------------------------------
 // HEADINGS
 //----------------------------------------------------------------------------------------------
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
+  h1, h2, h3, h4, h5, h6 {
+    font-family:                : $font-family-base;
+    font-weight:                : $font-weight-base;
+    color                       : $text-color;
+  }
+  h1 {
+    font-size                   : $font-size-h1;
+  }
+  h2 {
+    font-size                   : $font-size-h2;
+  }
+  h3 {
+    font-size                   : $font-size-h3;
+  }
+  h4 {
+    font-size                   : $font-size-h4;
+  }
+  h5 {
+    font-size                   : $font-size-h5;
+  }
   h6 {
-
+    font-size                   : $font-size-h6;
   }
 
 //----------------------------------------------------------------------------------------------

@@ -7,9 +7,48 @@
 //----------------------------------------------------------------------------------------------
 // BASE
 //----------------------------------------------------------------------------------------------
-  $font-family                  : "'Helvetica', 'Arial', sans-serif";
-  $font-size                    : 10px;
-  $error-color                  : "red";
+
+//Colors
+  $black                        : #000000;
+  $white                        : #FFFFFF;
+  $gray-base                    : #666666;
+  $gray-darkest                 : darken($gray-base, 28.0%);             // #222
+  $gray-darker                  : darken($gray-base, 20.0%);             // #333
+  $gray-dark                    : darken($gray-base, 7.0%);              // #555
+  $gray-light                   : lighten($gray-base, 7.0%);             // #777
+  $gray-lighter                 : lighten($gray-base, 20.0%);            // #999
+  $gray-lightest                : lighten($gray-base, 53.0%);            // #EEE
+
+  $error-color                  : #FF0000;
+
+//Typography
+  $font-family-sans-serif       : "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $font-family-serif            : Georgia, "Times New Roman", Times, serif;
+  $font-family-monospace        : Menlo, Monaco, Consolas, "Courier New", monospace;
+  $font-family-base             : $font-family-sans-serif;
+
+  $font-size-base               : 14px;
+  $font-size-large              : ceil(($font-size-base * 1.25));       // ~18px
+  $font-size-small              : ceil(($font-size-base * 0.85));       // ~12px
+  $font-size-h1                 : floor(($font-size-base * 2.6));       // ~36px
+  $font-size-h2                 : floor(($font-size-base * 2.15));      // ~30px
+  $font-size-h3                 : ceil(($font-size-base * 1.7));        // ~24px
+  $font-size-h4                 : ceil(($font-size-base * 1.25));       // ~18px
+  $font-size-h5                 : $font-size-base;
+  $font-size-h6                 : $font-size-small;
+
+  $line-height-base             : 1.428571429;                          // 20/14
+  $line-height-calculated       : floor(($font-size-base * $line-height-base));
+
+  $font-smoothing               : antialiased;
+
+  $font-weight-base             : 400;                                  // 'normal'
+  $font-weight-bold             : 700;                                  // 'bold'
+  $font-weight-semibold         : 600;
+  $font-weight-light            : 300;
+
+  $text-color                   : $gray-base;
+
 
 //----------------------------------------------------------------------------------------------
 // COMPONENTS
