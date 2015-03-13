@@ -7,7 +7,7 @@ It is expected that all projects will need to, at minimum, define:
 - Fonts (via `_fonts.scss`),
 - Overrides for standard type settings (e.g., `h1`-`h6`, via `_typography.scss`),
 - Form elements (e.g., `input[type="text"]` via `_forms.scss`), and
-- Utility selectors for commonly-used style applications (e.g., `.centered`) via `_utilities.scss`.
+- Utility selectors for commonly-used style applications (e.g., `.centered`, via `_utilities.scss`).
 
 Other overrides may optionally stay in the `_base.scss` file.
 
