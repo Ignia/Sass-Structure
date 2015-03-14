@@ -10,16 +10,16 @@
 
 //Colors
   $black                        : #000000;
-  $white                        : #FFFFFF;
+  $white                        : #ffffff;
   $gray-base                    : #666666;
   $gray-darkest                 : darken($gray-base, 28.0%);             // #222
   $gray-darker                  : darken($gray-base, 20.0%);             // #333
   $gray-dark                    : darken($gray-base, 7.0%);              // #555
   $gray-light                   : lighten($gray-base, 7.0%);             // #777
   $gray-lighter                 : lighten($gray-base, 20.0%);            // #999
-  $gray-lightest                : lighten($gray-base, 53.0%);            // #EEE
+  $gray-lightest                : lighten($gray-base, 53.0%);            // #eee
 
-  $error-color                  : #FF0000;
+  $error-color                  : #ff0000;
 
 //Typography
   $font-family-sans-serif       : "Helvetica Neue", Helvetica, Arial, sans-serif;
