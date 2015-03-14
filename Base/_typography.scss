@@ -31,8 +31,8 @@
 //Text positioning/padding
   $line-height-base             : 1.428571429                           !default;       // 20/14
   $line-height-calculated       : floor(($font-size-base * $line-height-base))      !default;
-  $heading-margin-top           : 0.2rem;
-  $heading-margin-bottom        : 0.5rem;
+  $heading-margin-top           : 0.2rem                                !default;
+  $heading-margin-bottom        : 0.5rem                                !default;
 
 //Weight
   $font-weight-base             : 400;                                  !default;   // 'normal'
@@ -46,6 +46,7 @@
 
 //Misc.
   $font-smoothing               : antialiased                           !default;
+  $text-rendering               : optimizeLegibility                    !default;
 
 //----------------------------------------------------------------------------------------------
 // DEFAULTS
