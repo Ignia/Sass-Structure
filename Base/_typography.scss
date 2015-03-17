@@ -12,41 +12,42 @@
 //----------------------------------------------------------------------------------------------
 
 //Font families
-  $font-family-sans-serif       : "Helvetica Neue", Helvetica, Arial, sans-serif    !default;
-  $font-family-serif            : Georgia, "Times New Roman", Times, serif          !default;
+  $font-family-sans-serif       : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+  $font-family-serif            : Georgia, "Times New Roman", Times, serif !default;
   $font-family-monospace        : Menlo, Monaco, Consolas, "Courier New", monospace !default;
-  $font-family-base             : $font-family-sans-serif               !default;
+  $font-family-base             : $font-family-sans-serif !default;
 
 //Font sizes
-  $font-size-base               : 14px                                  !default;
-  $font-size-large              : ceil(($font-size-base * 1.25))        !default;       // ~18px
-  $font-size-small              : ceil(($font-size-base * 0.85))        !default;       // ~12px
-  $font-size-h1                 : floor(($font-size-base * 2.6))        !default;       // ~36px
-  $font-size-h2                 : floor(($font-size-base * 2.15))       !default;       // ~30px
-  $font-size-h3                 : ceil(($font-size-base * 1.7))         !default;       // ~24px
-  $font-size-h4                 : ceil(($font-size-base * 1.25))        !default;       // ~18px
-  $font-size-h5                 : $font-size-base                       !default;
-  $font-size-h6                 : $font-size-small                      !default;
+  $font-size-base               : 14px !default;
+  $font-size-large              : ceil(($font-size-base * 1.25)) !default;      // ~18px
+  $font-size-small              : ceil(($font-size-base * 0.85)) !default;      // ~12px
+  $font-size-h1                 : floor(($font-size-base * 2.6)) !default;      // ~36px
+  $font-size-h2                 : floor(($font-size-base * 2.15)) !default;     // ~30px
+  $font-size-h3                 : ceil(($font-size-base * 1.7)) !default;       // ~24px
+  $font-size-h4                 : ceil(($font-size-base * 1.25)) !default;      // ~18px
+  $font-size-h5                 : $font-size-base !default;
+  $font-size-h6                 : $font-size-small !default;
 
 //Text positioning/padding
-  $line-height-base             : 1.428571429                           !default;       // 20/14
-  $line-height-calculated       : floor(($font-size-base * $line-height-base))      !default;
-  $heading-margin-top           : 0.2rem                                !default;
-  $heading-margin-bottom        : 0.5rem                                !default;
+  $line-height-base             : 1.428571429 !default;                         // 20/14
+  $line-height-calculated       : floor(($font-size-base * $line-height-base)) !default;
+  $heading-margin-top           : 0.2rem !default;
+  $heading-margin-bottom        : 0.5rem !default;
 
 //Weight
-  $font-weight-base             : 400;                                  !default;   // 'normal'
-  $font-weight-bold             : 700;                                  !default;   // 'bold'
-  $font-weight-semibold         : 600;                                  !default;
-  $font-weight-light            : 300;                                  !default;
+  $font-weight-base             : 400; !default;                                // 'normal'
+  $font-weight-bold             : 700; !default;                                // 'bold'
+  $font-weight-semibold         : 600; !default;
+  $font-weight-light            : 300; !default;
 
 //Colors
-  $text-color                   : #666666                               !default;
-  $error-color                  : #ff0000                               !default;
+  $text-color                   : #666666 !default;
+  $error-color                  : #ff0000 !default;
+  $link-color                   : $error-color !default;
 
 //Misc.
-  $font-smoothing               : antialiased                           !default;
-  $text-rendering               : optimizeLegibility                    !default;
+  $font-smoothing               : antialiased !default;
+  $text-rendering               : optimizeLegibility !default;
 
 //----------------------------------------------------------------------------------------------
 // DEFAULTS
@@ -55,9 +56,18 @@
     font-family                 : $font-family-base;
     font-size                   : $font-size-base;
     font-weight                 : $font-weight-base;
-    font-smoothing              : $font-smoothing;
+    -webkit-font-smoothing      : $font-smoothing;
     text-rendering              : $text-rendering;
     color                       : $text-color;
+  }
+  a {
+    color                       : $link-color;
+    text-decoration             : none;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration           : underline;
+    }
   }
 
 //----------------------------------------------------------------------------------------------

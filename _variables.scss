@@ -8,20 +8,19 @@
 // BASE
 //----------------------------------------------------------------------------------------------
 
-//Colors
+// Colors
   $black                        : #000000;
   $white                        : #ffffff;
   $gray-base                    : #666666;
-  $gray-darkest                 : darken($gray-base, 28.0%);             // #222
-  $gray-darker                  : darken($gray-base, 20.0%);             // #333
-  $gray-dark                    : darken($gray-base, 7.0%);              // #555
-  $gray-light                   : lighten($gray-base, 7.0%);             // #777
-  $gray-lighter                 : lighten($gray-base, 20.0%);            // #999
-  $gray-lightest                : lighten($gray-base, 53.0%);            // #eee
-
+  $gray-darkest                 : darken($gray-base, 28.0%);            // #222
+  $gray-darker                  : darken($gray-base, 20.0%);            // #333
+  $gray-dark                    : darken($gray-base, 7.0%);             // #555
+  $gray-light                   : lighten($gray-base, 7.0%);            // #777
+  $gray-lighter                 : lighten($gray-base, 20.0%);           // #999
+  $gray-lightest                : lighten($gray-base, 53.0%);           // #eee
   $error-color                  : #ff0000;
 
-//Typography
+// Typography
   $font-family-sans-serif       : "Helvetica Neue", Helvetica, Arial, sans-serif;
   $font-family-serif            : Georgia, "Times New Roman", Times, serif;
   $font-family-monospace        : Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -51,6 +50,10 @@
   $text-rendering               : optimizeLegibility;
 
   $text-color                   : $gray-base;
+  $link-color                   : $error-color;
+
+// Defaults
+  $body-bg                      : $white;
 
 //----------------------------------------------------------------------------------------------
 // COMPONENTS
