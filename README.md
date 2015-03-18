@@ -17,7 +17,7 @@ Briefly, [Sass](http://sass-lang.com/) extends the syntax for Cascading Style Sh
 ## Variables
 Ignia places the `_variables.scss` file in the root as, ideally, that is the first stop for maintaining a site's styles after it has been built. For more invasive updates, such as redesigns, developers will certainly need to modify other files, but any variables we *expect* to be modified will be in this location. Some developers place the `_variables.scss` in `/Base` or `/Helpers`; Ignia, however, maintains that this file should be immediately obvious and accessible when opening the `/Styles` directory.
 
-> *Important:* Variables defined in other files should always use the `! default` flag so they can be *overwritten* by `_variables.scss` without *relying* on it.
+> *Important:* Variables defined in other files should always use the `!default` flag so they can be *overwritten* by `_variables.scss` without *relying* on it.
 
 ## Directories
 - [x] [Base](./Base/)
