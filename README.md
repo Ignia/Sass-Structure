@@ -1,5 +1,5 @@
 # Ignia Sass Structure
-The projects Ignia works on come in a variety of sizes. For that reason, it is important that our Sass directory structure be comprehensive enough to accomodate large projects, without adding unnecessary complexity and overhead to small projects. To this end, we have aimed to establish a baseline structure that requires *relatively* few files, as well as a roadmap for how to extend that structure as projects (inevitably) grow.
+The projects Ignia works on come in a variety of sizes. For that reason, it is important that our Sass directory structure be comprehensive enough to accommodate large projects, without adding unnecessary complexity and overhead to small projects. To this end, we have aimed to establish a baseline structure that requires *relatively* few files, as well as a road map for how to extend that structure as projects (inevitably) grow.
 
 ## Contents
 - [Variables](#variables)
@@ -11,10 +11,13 @@ The projects Ignia works on come in a variety of sizes. For that reason, it is i
     - [Ambiguous Identifiers](#ambiguous-identifiers)
   - [Acknowledgements](#acknowledgements)
 
-## Variables
-Ignia places the `_variables.scss` file in the root as, ideally, that is the first stop for maintaining the site styles after the site has been built. For more invasive updates or refreshes, developers will certainly need to modify other directories, but any variables we expect to be modified should be in this file. Some developers place the `_variables.scss` in `/Base` or `/Helpers`; Ignia, however, maintains that this file should be immediately obvious and accessible when opening the `/Styles` directory.
+## What is Sass?
+Briefly, [Sass][http://sass-lang.com/] extends the syntax for Cascading Style Sheets (CSS) to allow for variables, conditions, calculations, includes, functions, and other programmatic capabilities. In effect, this greatly simplifies the process of writing CSS, reduces repetition of values, and makes stylesheets easier to maintain. Because Sass is precompiled into standard CSS, it introduces no compatibility issues.
 
-> *Important:* Variables defined in other files should always use the `! default` flag so they can be overwritten by `_variables.scss`.
+## Variables
+Ignia places the `_variables.scss` file in the root as, ideally, that is the first stop for maintaining a site's styles after it has been built. For more invasive updates, such as redesigns, developers will certainly need to modify other files, but any variables we *expect* to be modified will be in this location. Some developers place the `_variables.scss` in `/Base` or `/Helpers`; Ignia, however, maintains that this file should be immediately obvious and accessible when opening the `/Styles` directory.
+
+> *Important:* Variables defined in other files should always use the `! default` flag so they can be *overwritten* by `_variables.scss` without *relying* on it.
 
 ## Directories
 - [x] [Base](./Base/)
