@@ -2,6 +2,7 @@
 The projects Ignia works on come in a variety of sizes. For that reason, it is important that our Sass directory structure be comprehensive enough to accommodate large projects, without adding unnecessary complexity and overhead to small projects. To this end, we have aimed to establish a baseline structure that requires *relatively* few files, as well as a road map for how to extend that structure as projects (inevitably) grow.
 
 ## Contents
+- [What is Sass?](#what-is-sass)
 - [Variables](#variables)
 - [Directories](#directories)
 - [Import Strategy](#import-strategy)
