@@ -35,10 +35,10 @@
   $heading-margin-bottom        : 0.5rem !default;
 
 //Weight
-  $font-weight-base             : 400; !default;                                // 'normal'
-  $font-weight-bold             : 700; !default;                                // 'bold'
-  $font-weight-semibold         : 600; !default;
-  $font-weight-light            : 300; !default;
+  $font-weight-base             : 400 !default;                                 // 'normal'
+  $font-weight-bold             : 700 !default;                                 // 'bold'
+  $font-weight-semibold         : 600 !default;
+  $font-weight-light            : 300 !default;
 
 //Colors
   $text-color                   : #666666 !default;
@@ -81,8 +81,8 @@
   h6 {
     margin-top                  : $heading-margin-top;
     margin-bottom               : $heading-margin-bottom;
-    font-family:                : $font-family-base;
-    font-weight:                : $font-weight-base;
+    font-family                 : $font-family-base;
+    font-weight                 : $font-weight-base;
     color                       : $text-color;
   }
   h1 {
